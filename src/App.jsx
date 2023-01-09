@@ -23,18 +23,17 @@ function App() {
 
 const changeLanguage = (language) => {
 i18n.changeLanguage(language)
+localStorage.setItem("lng", language);
+localStorage.setItem("french",true);
 };
 
-//localStorage.setItem("lng", language);
-//localStorage.setItem("french",true);
+const changeLanguageEn = (language) => {
+  i18n.changeLanguage(language)
 
-// const changeLanguageEn = (language) => {
-//   i18n.changeLanguage(language)
-
-// localStorage.setItem("french",true);
-// localStorage.setItem("lng",language);
+localStorage.setItem("french",true);
+localStorage.setItem("lng",language);
   
-//   }
+  }
 const [ theme,setTheme] = useLocalStorage('dark');
 
 
@@ -77,7 +76,9 @@ setTheme((curr) => (curr ==='light'? 'dark':'light'));
     <Switch onChange={switchTheme} checked={theme === 'light'} /> </span>
 
     <span>   <button className='fr-img' onClick={() => changeLanguage("fr")}  > <img className='fr-logo ' src={fr} /> </button>
-    <button className='fr-img' onClick={() => changeLanguage("en")}  > <img className='fr-logo ' src={en} /> </button> </span>
+    <button className='fr-img' onClick={() => changeLanguageEn("en")}  > <img className='fr-logo ' src={en} /> </button> </span>
+
+
   
      </div> 
  
