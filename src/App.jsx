@@ -2,8 +2,6 @@ import React, { useState , useEffect} from 'react'
 import { createContext } from 'react';
 import useLocalStorage from 'use-local-storage';
 import './App.css'
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import NightsStayIcon from '@mui/icons-material/NightsStay';
 import Middle from './components/Middle';
 import logo from './IMG/logo.jpg'
 import Ending from './components/Ending';
