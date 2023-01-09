@@ -54,7 +54,7 @@ setTheme((curr) => (curr ==='light'? 'dark':'light'));
 <img className='top-logo' src={logo} ></img>
 <div className='middle-content'>
  
-     <div className='top-text-header'> <h2 className='h2-header'> <Trans i18nKey= "header"> For Italian, Creole Surinamese, Javanese and Chinese dishes and cakes  </Trans>
+     <div className='top-text-header'> <h2 className='h2-header'> <Trans i18nKey= "header"   />
      </h2> 
    
       </div>
