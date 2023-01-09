@@ -17,9 +17,10 @@ export default function Middle() {
 
 <div className='middle-text'>  
 <div className='middle-info'>
-<h2> <Trans i18nKey= "place">  </Trans> </h2>
-<p> <Trans i18nKey= "tel">  </Trans>  </p>
-<p> <Trans i18nKey= "email">  </Trans>  </p>
+
+<h2> <Trans i18nKey= {"place"}/> </h2>
+<p> <Trans i18nKey= {"tel"} /> </p>
+<p> <Trans i18nKey= {"email"} /> </p>
 
 
 </div>
