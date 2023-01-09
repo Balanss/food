@@ -1,0 +1,539 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap'); 
+
+
+@media screen and (max-width:319px) {
+body{
+    visibility: hidden;
+}
+}
+
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font:inherit
+}
+
+
+html{height: 100vh;}
+
+
+
+
+h2{
+  
+    text-shadow: 1px 1px darkgoldenrod;
+    font-family: 'Yeon Sung', cursive;
+}
+
+p{
+  
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+h5{
+    font-family: 'Yeon Sung', cursive;
+}
+
+.carousel-indicators{
+    bottom: -45px !important;
+}
+
+.carousel{
+    width: 300px;
+    margin: auto;
+}
+
+body{
+    min-height: 100vh;
+   
+}
+html{
+    color-scheme: dark light;
+}
+
+#light{
+    background-color: ghostwhite;
+    background-image: url("./IMG/soft-wallpaper.png")
+}
+
+
+
+
+.App{
+    background-color: #927055;;
+}
+
+#light .App{
+    background-color: ghostwhite;
+}
+
+
+.bg-div{
+position: relative;
+}
+
+.bg-div::before{
+    content:"";
+    background-image: url("./IMG/bgpic2.jpg");
+    height: 400px;
+    width: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.logo{
+    position: relative;
+    height: 380px;
+}
+
+.top-logo{
+    width: 129px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 22px;
+    position: relative;
+    box-shadow: 2px 1px goldenrod;
+}
+
+.switch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    padding-bottom:10px;
+    padding-top: 10px;
+    background-image: url("./IMG/soft-wallpaper.png");
+}
+
+.together-switch{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right:30px ;
+}
+
+
+
+.label-theme{
+    padding: 7px;
+    margin-right: 5px;
+    border-radius: 15px;
+    color: goldenrod;
+}
+
+#light .label-theme{
+    color: rgb(255,199,0);
+    padding: 7px;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+
+#light .middle-content{
+    position: relative;
+    height: 50px;
+    top: 50px;
+    color: black;
+    margin: auto;
+  
+}
+
+.middle-content{
+    position: relative;
+    height: 50px;
+    top: 50px;
+    color: white;
+    margin: auto;
+ 
+}
+
+.top-text-header{
+    width:90%;
+    margin-left: 10px;
+}
+
+.h2-header{
+    margin-top: 50px;
+    margin-top: 5px;
+    line-height: 1.3;
+    text-shadow: 1px 1px darkgoldenrod;
+    font-weight: 800;
+    padding-top: 60px;
+    word-break: break-word;
+    font-size: clamp(1.25rem, 1.1607rem + 0.4464vw, 1.875rem);
+}
+
+
+
+.small-logo{
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.middle-pics{
+    /* height: 200px; */
+    position: relative;
+    text-align: center;
+    background-image: url(/src/IMG/soft-wallpaper.png)
+}
+
+
+.middle-text{
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+ .middle-text{
+    color: white;
+} 
+
+#light .middle-text{
+    color: black;
+}
+
+
+.middle-info{
+    padding-top: 30px;
+}
+
+
+.car-img{
+    width: 190px;
+    margin-bottom: 20px;
+    border-radius: 200px;
+    padding: 0px;
+    margin-top: 50px;
+
+    outline: 5px solid white;
+}
+
+.picsoffood{
+    background-color: #322f2d;
+    height: 335px;
+}
+
+.foot-item-name{
+    color: white;
+}
+
+.small-menu{
+    text-align: center;
+    height: 1033px;
+}
+
+.small-menu{
+
+    color: white;
+}
+
+#light .small-menu{
+    background-color: ghostwhite;
+    color: black;
+}
+
+.banner{
+    width: 100vw;
+}
+
+
+.fr-logo{
+    width: 50px;
+}
+
+.fr-img{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.spicesbg{
+    position: relative;
+    
+}
+
+
+.motto{
+    border-top-style: double;
+    border-color: darkgoldenrod;
+    border-bottom-style: double;
+    border-width: 2px;
+    padding-top: 5px;
+    background-image: url(/src/IMG/soft-wallpaper.png)
+}
+
+.spicesbg::before{
+    content:"";
+    background-image: url("./IMG/pot.jpg");
+    height: 1000px;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.mini-menu{
+    position: relative;
+    text-align: left;
+}
+
+.footer{
+    color: white;
+
+}
+
+.footer-info{
+    padding-left: 10px;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.foodmenu{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 10px;
+    text-shadow: 1px 1px darkgoldenrod;
+}
+
+.foodmenu:hover{
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.menulist{
+    font-family: 'East Sea Dokdo', cursive;
+    width: 200px;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+
+.mini-menu {
+    position: relative;
+    text-align: center;
+}
+
+
+.modeline{
+    border-radius: 20px;
+
+}
+
+.modeline{
+    background-color: midnightblue;
+    border-radius: 20px
+
+}
+
+#light .modeline{
+    background: rgb(132,246,240);
+    background: -moz-linear-gradient(90deg, rgba(132,246,240,1) 0%, rgba(217,217,199,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(132,246,240,1) 0%, rgba(217,217,199,1) 100%);
+    background: linear-gradient(90deg, rgba(132,246,240,1) 0%, rgba(217,217,199,1) 100%);
+}
+
+
+
+@media screen and (min-width: 425px){
+
+    .h2-header{
+        text-align: center;
+    }
+
+    .top-text-header{
+        width:57%;
+        margin-left: 10px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+
+    
+    
+}
+
+
+@media screen and (min-width:768px){
+
+.top-logo{
+    width: 150px;
+
+}
+
+.h2-header{
+    padding-top: 30px;
+    margin-left: 150px;
+}
+
+.top-text-header {
+    width: 60%;
+    margin-left: 10px;
+}
+
+    .middle-text{
+        width: 50vw;
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 0;
+        height: 326px;
+    }
+
+    .middle-info {
+        padding-top: 90px;
+    } 
+    .middle-pics {
+        height: 325px;
+        position: relative;
+        text-align: center;
+        width: auto;
+        display: flex;
+        bottom: 1px;
+    }
+
+    .picsoffood{
+        width: 50vw;
+        display: inline-block;
+        height: auto;
+        margin-top: 6px;
+    }
+
+   
+
+    .bg-div{
+        position: relative;
+        }
+        
+        .bg-div::before{
+            content:"";
+            background-image: url("./IMG/bigbg.jpg");
+            height: 386px;
+            width: auto;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.6;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        }
+
+
+
+        .motto{
+            background-color: white;
+            color: black;
+            border-bottom-style: none;
+        }
+        .spicesbg::before{
+            content:"";
+            background-image: url("./IMG/pot.jpg");
+            height: 1000px;
+            width: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.6;
+            position: absolute;
+            top: -10px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        
+        }
+
+
+        .menulist{
+            width: 220px;
+        }
+
+       
+
+}
+
+
+@media screen and (min-width:1024px){
+
+    .top-logo {
+        width: 200px;
+    }
+
+    .top-text-header {
+        width: 45vw;
+        margin-left: 100px;
+    }
+
+    .middle-content {
+        position: relative;
+        height: 50px;
+        top: -6px;
+        color: white;
+        margin: auto;
+    }
+    
+    
+
+
+
+.picsoffood{
+    height: auto;
+}
+   
+
+}
+
+
+@media screen and (min-width:1440px){
+    .car-img {
+        width: 200px;}
+
+
+        .carousel-indicators {
+            bottom: -30px !important;
+        }
+
+        .carousel {
+            width: 450px;
+            margin: auto;
+        }
+}
