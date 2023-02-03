@@ -4,6 +4,8 @@ import dinner from "../IMG/dinner.webp"
 import dinner2 from "../IMG/dinner2.webp"
 import pom from "../IMG/pom.webp"
 import { Trans , useTranslation } from 'react-i18next'
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import EmailIcon from '@mui/icons-material/Email';
 import "bootstrap/dist/css/bootstrap.css";
 
 
@@ -17,9 +19,11 @@ export default function Middle() {
 
 <div className='middle-text'>  
 <div className='middle-info'>
-<h2> <Trans i18nKey= "place"> name placeholder </Trans> </h2>
-<p> <Trans i18nKey= "tel"> tel placeholder </Trans>  </p>
-<p> <Trans i18nKey= "email"> email placeholder </Trans>  </p>
+<h2> <Trans i18nKey= "company">  </Trans> </h2>
+<p className='center-this' > <Trans i18nKey= "number">  </Trans> <PhoneAndroidIcon />  </p>
+<p className='center-this'>  <Trans i18nKey= "email-address"></Trans> <EmailIcon />  </p>
+<p className='center-this'> Saint-Laurent du Maroni, Guyane Française   </p>
+<p className='center-this'> Paris, France  </p>
 
 
 </div>
@@ -27,7 +31,7 @@ export default function Middle() {
  </div>
 
 
-<div className='picsoffood'>
+{/* <div className='picsoffood'>
 <Carousel>
 <Carousel.Item interval={40000}>
 <img
@@ -62,7 +66,7 @@ export default function Middle() {
 
 </Carousel>
 
-</div>
+</div> */}
 </div>
 
   </>)

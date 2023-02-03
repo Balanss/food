@@ -2,14 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+ 
 
 
-@media screen and (max-width:319px) {
-body{
-    visibility: hidden;
+
+
+
+.no-display{
+display: none;
 }
-}
-
 *,*::before, *::after{
     box-sizing: border-box;
 }
@@ -27,7 +29,7 @@ html{height: 100vh;}
 
 
 h2{
-  
+    font-size: calc(1.325rem + 0.9vw) !important;
     text-shadow: 1px 1px darkgoldenrod;
     font-family: 'Yeon Sung', cursive;
 }
@@ -35,10 +37,19 @@ h2{
 p{
   
     font-family: 'Roboto Flex', sans-serif;
+    font-size: clamp(1.25rem, 1.137rem + 0.565vw, 2.5rem);
 }
 
 h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px !important;
+}
+
+h6{
     font-family: 'Yeon Sung', cursive;
+    text-shadow: 1px 1px darkgoldenrod;
+    font-weight: 600 !important;
+   
 }
 
 .carousel-indicators{
@@ -82,7 +93,7 @@ position: relative;
 .bg-div::before{
     content:"";
     background-image: url("./IMG/bgpic2.jpg");
-    height: 400px;
+    height: 380px;
     width: auto;
     background-position: top;
     background-repeat: no-repeat;
@@ -162,6 +173,13 @@ position: relative;
  
 }
 
+.center-this{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
 .top-text-header{
     width:90%;
     margin-left: 10px;
@@ -173,9 +191,8 @@ position: relative;
     line-height: 1.3;
     text-shadow: 1px 1px darkgoldenrod;
     font-weight: 800;
-    padding-top: 60px;
+    padding-top: 20px;
     word-break: break-word;
-    font-size: clamp(1.25rem, 1.1607rem + 0.4464vw, 1.875rem);
 }
 
 
@@ -197,7 +214,7 @@ position: relative;
 .middle-text{
 
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: -16px;
 }
 
  .middle-text{
@@ -210,12 +227,12 @@ position: relative;
 
 
 .middle-info{
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 
 .car-img{
-    width: 190px;
+    width: 150px;
     margin-bottom: 20px;
     border-radius: 200px;
     padding: 0px;
@@ -225,7 +242,8 @@ position: relative;
 }
 
 .picsoffood{
-    background-color: #322f2d;
+    background-color: black;
+background-image: url("./IMG/wood.png");
     height: 335px;
 }
 
@@ -235,7 +253,7 @@ position: relative;
 
 .small-menu{
     text-align: center;
-    height: 1033px;
+    height: auto;
 }
 
 .small-menu{
@@ -262,6 +280,10 @@ position: relative;
     border-color: transparent;
 }
 
+.span-lng{
+    position: fixed;
+    top: 0;
+}
 
 .spicesbg{
     position: relative;
@@ -277,13 +299,14 @@ position: relative;
     border-bottom-style: double;
     border-width: 2px;
     padding-top: 5px;
-    background-image: url(/src/IMG/soft-wallpaper.png)
+    background-image: url(/src/IMG/soft-wallpaper.png);
+   
+    
 }
 
 .spicesbg::before{
     content:"";
     background-image: url("./IMG/pot.jpg");
-    height: 1000px;
     width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -335,7 +358,7 @@ position: relative;
 
 .menulist{
     font-family: 'East Sea Dokdo', cursive;
-    width: 200px;
+    width: 120px;
     height: 100%;
     margin: auto;
     margin-top: 20px;
@@ -351,16 +374,30 @@ position: relative;
 }
 
 
+
+.menubglist{
+    background: linear-gradient(180deg, rgba(169,117,82,1) 0%, rgba(217,217,199,1) 100%);
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    height: 250px;
+}
+
+
 .modeline{
     border-radius: 20px;
-
-}
-
-.modeline{
+    position: absolute;
+    bottom: 0;
     background-color: midnightblue;
-    border-radius: 20px
+right:5px
 
 }
+
 
 #light .modeline{
     background: rgb(132,246,240);
@@ -386,6 +423,7 @@ position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
+    margin: auto;
     }
     
 
@@ -396,14 +434,29 @@ position: relative;
 
 @media screen and (min-width:768px){
 
+
+.menubglist{margin-left: 20px;
+width: 220px;
+font-size: 20px;
+height: 330px;
+}
+
+    .style-flex{
+        display: flex ;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 530px;
+    }
 .top-logo{
     width: 150px;
 
 }
 
 .h2-header{
-    padding-top: 30px;
+    padding-top: 15px;
     margin-left: 150px;
+    margin-top: -40px;
 }
 
 .top-text-header {
@@ -427,7 +480,6 @@ position: relative;
         position: relative;
         text-align: center;
         width: auto;
-        display: flex;
         bottom: 1px;
     }
 
@@ -470,7 +522,7 @@ position: relative;
         .spicesbg::before{
             content:"";
             background-image: url("./IMG/pot.jpg");
-            height: 1000px;
+          
             width: auto;
             background-position: center;
             background-repeat: no-repeat;
@@ -486,15 +538,25 @@ position: relative;
 
 
         .menulist{
-            width: 220px;
+            width: 190px;
         }
 
-       
+      
 
 }
 
 
 @media screen and (min-width:1024px){
+
+
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        width: 500px;
+    }
 
     .top-logo {
         width: 200px;
@@ -521,13 +583,21 @@ position: relative;
     height: auto;
 }
    
+.footer-info{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+width: 900px;
+   }
 
 }
 
 
 @media screen and (min-width:1440px){
     .car-img {
-        width: 200px;}
+        width: 150px;}
 
 
         .carousel-indicators {
@@ -538,4 +608,30 @@ position: relative;
             width: 450px;
             margin: auto;
         }
+
+        
 }
+
+@media screen and (min-width:2560px) {
+    .car-img {
+        width: 150px;
+    }
+
+}
+
+
+
+@media screen and (max-width:319px) {
+
+    .App{
+    display: none;
+    }
+    .no-display{
+        display: block;
+        text-align: center;
+        margin-top: 200px;
+        }
+    
+    }
+    
+    
