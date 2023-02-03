@@ -105,7 +105,7 @@ const handleClose = () => {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        <img className='fr-logo '  src={ (flag === true) ? 'src/IMG/en.png' : 'src/IMG/fr.png'}/>
+        <img className='fr-logo '  src={ (flag === true) ? en : fr}/>
        
         
        
