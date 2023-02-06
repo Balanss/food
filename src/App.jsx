@@ -29,7 +29,6 @@ const changeLanguage = (language) => {
 i18n.changeLanguage(language)
 localStorage.setItem("lng", language);
 localStorage.setItem("french",true);
-
 setFlagB('src/IMG/fr.png')
 setFlag(true)
 };
@@ -45,10 +44,6 @@ setFlagB('src/IMG/en.png')
   }
 
 const [ theme,setTheme] = useLocalStorage('dark');
-
-
-
-
 const switchTheme = () => {
 setTheme((curr) => (curr ==='light'? 'dark':'light'));
 }
@@ -105,7 +100,7 @@ const handleClose = () => {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        <img className='fr-logo '  src={ (flag === true) ? en : fr}/>
+        <img className='fr-logo '  src={ flag === false ? fr : en}/>
        
         
        

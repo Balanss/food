@@ -1,8 +1,5 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import dinner from "../IMG/dinner.webp"
-import dinner2 from "../IMG/dinner2.webp"
-import pom from "../IMG/pom.webp"
 import { Trans , useTranslation } from 'react-i18next'
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import EmailIcon from '@mui/icons-material/Email';

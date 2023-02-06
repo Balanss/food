@@ -9,11 +9,12 @@ import translationFR from "../src/translationFR.json";
 
 
 const resources = {
-  en: {
-    translation: translationEN
-  },
+
   fr: {
     translation: translationFR
+  },
+  en: {
+    translation: translationEN
   }
 };
 
@@ -21,7 +22,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
 
   
   resources,
-    fallbackLng: "en",
+    fallbackLng: "fr",
     debug: true,
     interpolation: {
       escapeValue: false // not needed for react as it escapes by default
