@@ -372,6 +372,7 @@ background-image: url("./IMG/wood.png");
     margin-bottom: 20px;
     border-style: ridge;
     border-radius: 10px;
+    border-color: transparent;
 }
 
 

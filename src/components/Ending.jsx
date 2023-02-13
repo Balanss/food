@@ -20,6 +20,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import Catering from "./Catering"
+import Cakes from "./Cakes"
 
 const style = {
   position: 'absolute',
@@ -46,8 +48,8 @@ const [ colorCatering,setColorCatering] = useState("white")
 
   
 const Lunch = lazy(() => import ('./lunch'));
-const Cakes = lazy(() => import ('./Cakes'));
-const Catering = lazy(() => import ('./Catering'));
+//const Cakes = lazy(() => import ('./Cakes'));
+// const Catering = lazy(() => import ('./Catering'));
 
 const handleDinner = () => {
 setDinner(true);setLunch(false);setCake(false);setColor("red");setColorCake("white");setColorLunch("white");setColorCatering("white")
@@ -122,10 +124,12 @@ const [ id , setId] = useState('');
 
 <div>   <Suspense fallback={<div> Loading ... </div>}>  
     <div style={{display:lunch? "block":"none"}} >   <Lunch />    </div>
-    <div className='' style={{display:catering? "block":"none"}}>    <Catering /> </div>
-    <div className='' style={{display:cake? "block":"none"}}>  <Cakes />  </div> 
+   
+ 
     </Suspense>  
     </div>
+    <div className='' style={{display:cake? "block":"none"}}>  <Cakes />  </div> 
+    <div className='' style={{display:catering? "block":"none"}}>    <Catering /> </div>
 
 </div>
 
