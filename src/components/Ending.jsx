@@ -1,14 +1,14 @@
 
 import React , {useState, lazy , Suspense} from 'react'
 import din3placeholder from './dinner/din3placeholder.jpg'
-import din1 from "./dinner/din1.jpg"
+import din1 from "./dinner/din1.webp"
 import din1ph from "./dinner/din1ph.jpg"
 import din2 from "./dinner/din2.jpg"
 import din2ph from "./dinner/din2ph.jpg"
-import din3 from "./dinner/din3.jpg"
+import din3 from "./dinner/din3.webp"
 import din4 from "./dinner/din4.jpg"
 import din4ph from "./dinner/din4ph.jpg"
-import macaroni from "./dinner/macaroni.jpg"
+import macaroni from "./dinner/macaroni.webp"
 import macaroniph from "./dinner/macaroniph.jpg"
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Trans , useTranslation } from 'react-i18next'

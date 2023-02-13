@@ -544,7 +544,7 @@ height: 330px;
         
         .bg-div::before{
             content:"";
-            background-image: url("./IMG/bigbg.jpg");
+            background-image: url("./IMG/bigbg.webp");
             height: 386px;
             width: auto;
             background-position: top;
