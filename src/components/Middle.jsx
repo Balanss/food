@@ -26,44 +26,6 @@ export default function Middle() {
 </div>
 
  </div>
-
-
-{/* <div className='picsoffood'>
-<Carousel>
-<Carousel.Item interval={40000}>
-<img
-          className="car-img"
-          src={dinner}
-          alt="First slide"
-         
-        /> 
-        <p className='foot-item-name'> Rice with bbq chicken </p>
-        </Carousel.Item>
-
-
-        <Carousel.Item interval={40000}>
-<img
-          className="car-img"
-          src={pom}
-          alt="pom"
-         
-        /> 
-         <p className='foot-item-name'> Sweet sweet pom </p>
-        </Carousel.Item>
-
-        <Carousel.Item interval={40000}>
-<img
-          className="car-img"
-          src={dinner2}
-          alt="dinner2"
-          
-        /> 
-         <p className='foot-item-name'> Soato soup  </p>
-        </Carousel.Item>
-
-</Carousel>
-
-</div> */}
 </div>
 
   </>)

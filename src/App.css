@@ -26,7 +26,13 @@ display: none;
 html{height: 100vh;}
 
 
+.carousel-control-next-icon , .carousel-control-prev-icon{
+    display: none !important;
+}
 
+.carousel-indicators{
+    top: 0 !important;
+}
 
 h2{
     font-size: calc(1.325rem + 0.9vw) !important;
@@ -207,6 +213,7 @@ position: relative;
     /* height: 200px; */
     position: relative;
     text-align: center;
+    padding-bottom: 30px;
     background-image: url(/src/IMG/soft-wallpaper.png)
 }
 
@@ -345,7 +352,7 @@ background-image: url("./IMG/wood.png");
 .foodmenu{
     background-color: transparent;
     border-color: transparent;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 800;
     padding-left: 10px;
     text-shadow: 1px 1px darkgoldenrod;
@@ -356,7 +363,7 @@ background-image: url("./IMG/wood.png");
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.menulist{
+.menulist {
     font-family: 'East Sea Dokdo', cursive;
     width: 120px;
     height: 100%;
@@ -368,16 +375,27 @@ background-image: url("./IMG/wood.png");
 }
 
 
+
+
 .mini-menu {
     position: relative;
     text-align: center;
 }
 
+.formodal{
+    width: 300px;
+    margin: auto;
+}
 
+.css-1wnsr1i{
+    width: auto!important;
+    background-color: transparent !important;
+    border: transparent !important;
+}
 
 .menubglist{
     background: linear-gradient(180deg, rgba(169,117,82,1) 0%, rgba(217,217,199,1) 100%);
-    width: 150px;
+   width: 140px;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
@@ -406,9 +424,26 @@ right:5px
     background: linear-gradient(90deg, rgba(132,246,240,1) 0%, rgba(217,217,199,1) 100%);
 }
 
+.index{
+    z-index:100 ;
+    margin-top: 50px !important;
+}
 
+
+@media screen and (min-width: 375px){
+    .menubglist{
+        width: 140px;
+    }
+}
 
 @media screen and (min-width: 425px){
+
+
+    .carousel {width: 520px !important;}
+
+    .carousel-inner{
+        overflow: auto;
+    }
 
     .h2-header{
         text-align: center;
@@ -424,20 +459,31 @@ right:5px
         flex-direction: row;
         justify-content: center;
     margin: auto;
+    width: 50vw;
     }
     
+
+    .menubglist{
+        width: 160px;
+    }
 
     
     
 }
 
 
+
 @media screen and (min-width:768px){
 
 
+    .formodal{
+        width: 500px !important;
+        margin: auto;
+    }
+
 .menubglist{margin-left: 20px;
 width: 220px;
-font-size: 20px;
+font-size: 50px;
 height: 330px;
 }
 
@@ -541,6 +587,10 @@ height: 330px;
             width: 190px;
         }
 
+        .menu{
+            width: 80vw;
+        }
+
       
 
 }
@@ -596,6 +646,8 @@ width: 900px;
 
 
 @media screen and (min-width:1440px){
+
+    .foodmenu {font-size: 30px;}
     .car-img {
         width: 150px;}
 

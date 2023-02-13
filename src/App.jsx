@@ -119,12 +119,6 @@ const handleClose = () => {
 
       </Menu>
     </div>
-
-    {/* <span className='span-lng'>   <button className='fr-img' onClick={() => changeLanguage("fr")}  > <img className='fr-logo ' src={fr} /> </button>
-    <button className='fr-img' onClick={() => changeLanguageEn("en")}  > <img className='fr-logo ' src={en} /> </button> </span> */}
-
-
-  
      </div> 
  
    </div>
