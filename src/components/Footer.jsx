@@ -16,8 +16,11 @@ export default function Footer() {
       <div className='footer-info'> 
       <h5> <Trans i18nKey= "number">  </Trans> <PhoneAndroidIcon /> </h5> 
       <h5> <Trans i18nKey= "email-address"> </Trans>  <EmailIcon /> </h5>   
-      <h5>  <Trans i18nKey= "company"></Trans> </h5>
+      <h5>  <Trans i18nKey= "kkf"></Trans> </h5>
+     
+   
       </div>
+      <h3 className='company-slogan'>  <Trans i18nKey= "company"></Trans> </h3>
 <div> 
 </div>
 

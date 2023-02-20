@@ -11,6 +11,8 @@ import salad2 from "./lunch/salad2.jpg"
 import salad2ph from "./lunch/salad2ph.jpg"
 import salad3 from "./lunch/salad3.jpg"
 import salad3ph from "./lunch/salad3ph.jpg"
+import salad5 from "./lunch/salad5.webp"
+import saladph from "./lunch/saladph.jpg"
 import coco from "./lunch/coco.jpg"
 import { Trans , useTranslation } from 'react-i18next'
 import { styled } from '@mui/material/styles';
@@ -64,7 +66,7 @@ const handleClose = () => setOpen(false);
             <Button className='index'  onClick={() => {setOpen(true); setId(salad1)} }>  <div className='menubglist'> <h6 >  <LazyLoadImage className='menulist' src={salad1} alt={salad1}  placeholderSrc={salad1ph} effect='blur' /> salad with corn, beans, lettuce  </h6> </div> </Button>
             <Button  className='index' onClick={() => {setOpen(true); setId(salad2)} }><div className='menubglist'> <h6 >  <LazyLoadImage className='menulist' src={salad2} alt={salad2} placeholderSrc={salad2ph} effect='blur' /> egg salad with fries, lettuce  </h6> </div> </Button>
             <Button  className='index' onClick={() => {setOpen(true); setId(coco)} }> <div  className='menubglist'> <h6>  <LazyLoadImage className='menulist' src={coco}  alt={coco}  effect='blur' /> Coconut Balls </h6> </div> </Button>
-            <Button  className='index' onClick={() => {setOpen(true); setId(salad3)} }>  <div  className='menubglist'> <h6>  <LazyLoadImage className='menulist' src={salad3}  alt={salad3} placeholderSrc={salad3ph} effect='blur' /> salad with tomatoes, olives, cucumber ,lettuce </h6> </div> </Button>       
+                  
             </Grid>
           </Grid>   
         </Box>       
@@ -79,14 +81,13 @@ const handleClose = () => setOpen(false);
            
            
    
-            <div className='menubglist'>  <h6 >  <LazyLoadImage className='menulist' src={lunch2} alt={lunch2} placeholderSrc={lunch2ph} effect='blur' /> surinamese pastei <br />  </h6> </div>
+            <Button className='index'  onClick={() => {setOpen(true); setId(salad5)} }>  <div className='menubglist'> <h6 >  <LazyLoadImage className='menulist' src={salad5} alt={salad5}  placeholderSrc={saladph} effect='blur' /> salad with pine nuts en feta  </h6> </div> </Button>
         
-            <div className='menubglist'>  <h6 > <LazyLoadImage  className='menulist' src={lunch3} alt={lunch3} placeholderSrc={lunch3ph} effect='blur' /> surinamese pastei <br />  </h6> </div>
+
        
             </Grid>
             <Grid item xs={6}>
-            <div className='menubglist'> <h6 >  <LazyLoadImage className='menulist' src={salad1} alt={salad1}  
-            placeholderSrc={salad1ph} effect='blur' /> salad with corn, beans, lettuce  </h6> </div>
+             <Button  className='index' onClick={() => {setOpen(true); setId(salad3)} }>  <div  className='menubglist'> <h6>  <LazyLoadImage className='menulist' src={salad3}  alt={salad3} placeholderSrc={salad3ph} effect='blur' /> salad with tomatoes, olives, cucumber ,lettuce </h6> </div> </Button> 
 
 
             </Grid>

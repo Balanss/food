@@ -8,6 +8,8 @@ import din2ph from "./dinner/din2ph.jpg"
 import din3 from "./dinner/din3.webp"
 import din4 from "./dinner/din4.jpg"
 import din4ph from "./dinner/din4ph.jpg"
+import din5 from "./dinner/din5.webp"
+import din5ph from "./dinner/din5ph.jpg"
 import macaroni from "./dinner/macaroni.webp"
 import macaroniph from "./dinner/macaroniph.jpg"
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -20,8 +22,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import Catering from "./Catering"
 import Cakes from "./Cakes"
+import Lunch from "./Lunch"
 
 const style = {
   position: 'absolute',
@@ -40,33 +42,28 @@ export default function ending() {
   const [dinner,setDinner] = useState(true)
   const [ lunch,setLunch] = useState(false)
   const [cake,setCake] = useState(false)
-  const [ catering,setCatering ] = useState(false)
   const [ color,setColor] = useState('red')
 const [colorLunch,setColorLunch] = useState("white")
 const [ colorCake,setColorCake] = useState("white")
-const [ colorCatering,setColorCatering] = useState("white")
+
 
   
-const Lunch = lazy(() => import ('./lunch'));
-//const Cakes = lazy(() => import ('./Cakes'));
-// const Catering = lazy(() => import ('./Catering'));
+
 
 const handleDinner = () => {
-setDinner(true);setLunch(false);setCake(false);setColor("red");setColorCake("white");setColorLunch("white");setColorCatering("white")
+setDinner(true);setLunch(false);setCake(false);setColor("red");setColorCake("white");setColorLunch("white")
 }
 
 
 const handleLunch = () => {
-  setLunch(true);setDinner(false);setCake(false);setColor("white");setColorLunch("red");setColorCake("white");setCatering(false);setColorCatering('white')
+  setLunch(true);setDinner(false);setCake(false);setColor("white");setColorLunch("red");setColorCake("white")
 }
 
 const handleCake = () => {
-  setLunch(false); setDinner(false) ;setCake(true); setCatering(false); setColor("white");setColorLunch("white");setColorCake("red");setColorCatering('white')
+  setLunch(false); setDinner(false) ;setCake(true);  setColor("white");setColorLunch("white");setColorCake("red")
 }
 
-const handleCatering = () => {
-  setLunch(false);setDinner(false);setCake(false);setCatering(true);setColor("white");setColorLunch("white");setColorCake("white");setColorCatering("red")
-}
+
   
 const [open, setOpen] = React.useState(false);
 const [ id , setId] = useState('');
@@ -88,7 +85,7 @@ const [ id , setId] = useState('');
   <button onClick={handleCake} className="foodmenu" style={{color: colorCake}} > <Trans i18nKey= "cake">  </Trans> </button>
 <button onClick={handleLunch} className="foodmenu" style={{color: colorLunch}} > <Trans i18nKey= "lunch">  </Trans></button>
 <button onClick={handleDinner} className="foodmenu" style={{color: color}}> <Trans i18nKey= "dinner">  </Trans></button>
-<button onClick={handleCatering} className="foodmenu" style={{color: colorCatering}}> <Trans i18nKey= "catering">  </Trans></button>
+
   </span>
 
 <div className='menu'> 
@@ -101,7 +98,8 @@ const [ id , setId] = useState('');
         <Grid item  xs={6} sm={6}>
         <Button onClick={() => {setOpen(true); setId(din1)} }>  <div className='menubglist'> <h6><LazyLoadImage  className='menulist ' src={din1} alt={din1} placeholderSrc={din1ph} effect='blur'/> yellow rice <br/> with chicken </h6></div> </Button>
         <Button onClick={() => { setOpen(true); setId(din2) }}> <div className='menubglist'><h6> <LazyLoadImage className='menulist' src={din2} alt={din2} placeholderSrc={din2ph} effect='blur' /> fried rice <br/> with chicken  </h6> </div> </Button>
-        <Button onClick={() => { setOpen(true); setId(din4) }}> <div className='menubglist'><h6> <LazyLoadImage  className='menulist' src={din4} alt={din4} placeholderSrc={din4ph} effect='blur' /> <br/>  </h6> </div> </Button>
+        <Button onClick={() => { setOpen(true); setId(din4) }}> <div className='menubglist'><h6> <LazyLoadImage  className='menulist' src={din4} alt={din4} placeholderSrc={din4ph} effect='blur' /> <br/>   </h6> </div> </Button>
+       
         <Modal
         open={open}
         onClose={handleClose}
@@ -118,18 +116,12 @@ const [ id , setId] = useState('');
         <Grid item xs={6} sm={6}>
         <Button onClick={() => { setOpen(true); setId(din3) }}><div className='menubglist'><h6><LazyLoadImage  className='menulist' src={din3} placeholderSrc={din3placeholder} alt={din3} effect='blur'/> brown rice <br/> with bbq chicken  </h6> </div> </Button>
         <Button onClick={() => { setOpen(true); setId(macaroni) }}> <div className='menubglist'><h6><LazyLoadImage  className='menulist' src={macaroni} alt={macaroni}  placeholderSrc={macaroniph} effect='blur'/> macaroni dish <br/> with grilled chicken </h6> </div> </Button>
+        <Button onClick={() => { setOpen(true); setId(din5) }}> <div className='menubglist'><h6> <LazyLoadImage  className='menulist' src={din5} alt={din5} placeholderSrc={din5ph} effect='blur' /> <br/> A3 Tjauw -min moksie meti </h6> </div> </Button>
         </Grid>
       </Grid>
-    </Box>  </div>
-
-<div>   <Suspense fallback={<div> Loading ... </div>}>  
+    </Box>  </div>  
     <div style={{display:lunch? "block":"none"}} >   <Lunch />    </div>
-   
- 
-    </Suspense>  
-    </div>
     <div className='' style={{display:cake? "block":"none"}}>  <Cakes />  </div> 
-    <div className='' style={{display:catering? "block":"none"}}>    <Catering /> </div>
 
 </div>
 

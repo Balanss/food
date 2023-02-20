@@ -6,6 +6,8 @@ import cake2ph from "./Cake/cake2ph.jpg";
 import cake3 from "./Cake/cake3.jpg";
 import cake3ph from "./Cake/cake3ph.jpg";
 import viado from "./Cake/viado.jpg";
+import cake4 from "./Cake/cake4.webp";
+import cake4ph from "./Cake/cake4ph.jpg"
 import { Trans, useTranslation } from "react-i18next";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -60,12 +62,7 @@ export default function Cakes() {
                 </h6>
               </div>
             </Button>
-            <Button
-              onClick={() => {
-                setOpen(true);
-                setId(cake2);
-              }}
-            >
+            <Button onClick={() => {setOpen(true);setId(cake2);}}>
               
               <div className="menubglist">
                 <h6>
@@ -143,6 +140,29 @@ export default function Cakes() {
                     effect="blur"
                   />
                   Viado
+                </h6>
+              </div>
+            </Button>
+            <Button
+              onClick={() => {
+                setOpen(true);
+                setId(cake4);
+              }}
+            >
+              
+              <div className="menubglist">
+                
+                <h6>
+                  
+                  <LazyLoadImage
+                    loading="lazy"
+                    src={cake4}
+                    alt={cake4}
+                    className="menulist"
+                    placeholderSrc={cake4ph}
+                    effect="blur"
+                  />
+                Nuts with currants
                 </h6>
               </div>
             </Button>
