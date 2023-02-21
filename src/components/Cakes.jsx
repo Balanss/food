@@ -39,17 +39,9 @@ export default function Cakes() {
       <Box sx={{ width: "100%" }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={6}>
-            <Button
-              onClick={() => {
-                setOpen(true);
-                setId(cake1);
-              }}
-            >
-              
+            <Button onClick={() => {setOpen(true);setId(cake1);}}>
               <div className="menubglist">
-                
-                <h6>
-                  
+               <h6>
                   <LazyLoadImage
                     loading="lazy"
                     src={cake1}
@@ -63,10 +55,8 @@ export default function Cakes() {
               </div>
             </Button>
             <Button onClick={() => {setOpen(true);setId(cake2);}}>
-              
               <div className="menubglist">
                 <h6>
-                  
                   <LazyLoadImage
                     loading="lazy"
                     src={cake2}
@@ -79,17 +69,9 @@ export default function Cakes() {
                 </h6>
               </div>
             </Button>
-            <Button
-              onClick={() => {
-                setOpen(true);
-                setId(cake3);
-              }}
-            >
-              
-              <div className="menubglist">
-                <h6>
-                  
-                  <LazyLoadImage
+            <Button onClick={() => {setOpen(true); setId(cake3);}}>
+              <div className="menubglist"><h6>
+                   <LazyLoadImage
                     loading="lazy"
                     src={cake3}
                     alt={cake3}
@@ -101,6 +83,7 @@ export default function Cakes() {
                 </h6>
               </div>
             </Button>
+
           </Grid>
 
           <Modal
@@ -122,17 +105,10 @@ export default function Cakes() {
           </Modal>
 
           <Grid item xs={6}>
-            <Button
-              onClick={() => {
-                setOpen(true);
-                setId(viado);
-              }}
-            >
-              
+            <Button onClick={() => {setOpen(true);setId(viado);}}>
               <div className="menubglist">
                 <h6>
-                  
-                  <LazyLoadImage
+                   <LazyLoadImage
                     loading="lazy"
                     src={viado}
                     alt={viado}
@@ -143,17 +119,7 @@ export default function Cakes() {
                 </h6>
               </div>
             </Button>
-            <Button
-              onClick={() => {
-                setOpen(true);
-                setId(cake4);
-              }}
-            >
-              
-              <div className="menubglist">
-                
-                <h6>
-                  
+            <Button onClick={() => {setOpen(true);setId(cake4);}} > <div className="menubglist"> <h6>
                   <LazyLoadImage
                     loading="lazy"
                     src={cake4}
@@ -166,6 +132,7 @@ export default function Cakes() {
                 </h6>
               </div>
             </Button>
+
           </Grid>
         </Grid>
       </Box>
