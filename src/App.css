@@ -191,7 +191,7 @@ position: relative;
 #light .middle-content{
     position: relative;
     height: 50px;
-    top: 6px;
+    top: 50px;
     color: black;
     margin: auto;
   
@@ -332,6 +332,7 @@ background-image: url("./IMG/wood.png");
 .span-lng{
     position: fixed;
     top: 0;
+    right: 10px;
 }
 
 .spicesbg{
