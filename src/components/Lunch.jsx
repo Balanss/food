@@ -49,8 +49,8 @@ const [open, setOpen] = React.useState(false);
 const handleClose = () => setOpen(false);
   return ( <>
     <div className=''>  
-  <Carousel> 
-  <Carousel.Item interval={15000}>
+  <Carousel fade> 
+  <Carousel.Item interval={30000}>
 
     <Box sx={{ width: '100%' }}>
           <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
@@ -67,7 +67,7 @@ const handleClose = () => setOpen(false);
           </Grid>   
         </Box>       
 </Carousel.Item>
-<Carousel.Item interval={15000}>
+<Carousel.Item interval={30000}>
        
        
 

@@ -149,7 +149,7 @@ position: relative;
     width: 100%;
     background-color: black;
     position: absolute;
-    padding-bottom:10px;
+    padding-bottom:30px;
     padding-top: 10px;
     background-image: url("./IMG/soft-wallpaper.png");
 }
@@ -457,14 +457,14 @@ background-image: url("./IMG/wood.png");
     margin-bottom: 20px;
     font-size: 20px;
     margin-top: 20px;
-    height: 280px;
+    height: 290px;
 }
 
 
 .modeline{
     border-radius: 20px;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     background-color: midnightblue;
 right:5px
 
@@ -492,17 +492,43 @@ right:5px
     font-size: clamp(0.9375rem, 0.9093rem + 0.1412vw, 1.25rem);
     line-height: 2;
     text-shadow: 1px 1px darkgoldenrod;
+    word-break: break-word;
+}
+
+#light .p-hobby{
+    color: black;
 }
 
 .closing-text{
     width: 90vw;
     margin: auto;
+    word-break: break-word;
 }
 
-a{
-    color: white !important;
-    text-decoration: none !important;
+#light .closing-text{
+    color: black;
 }
+
+#light .a-link{
+    color: black ;
+}
+
+.a-link{
+    color: white ;
+    text-decoration: none;
+}
+
+.sun{
+    color: yellow;
+    margin-left: 10px;
+}
+
+.night{
+    color: white;
+    margin-left: 10px;
+}
+
+
 
 @media screen and (min-width: 375px){
     .menubglist{
@@ -549,6 +575,10 @@ a{
 
 @media screen and (min-width:768px){
 
+
+    .text-increase{
+        font-size: 20px !important;
+    }
 
       .p-hobby{
         width: 600px;

@@ -98,7 +98,7 @@ const [ id , setId] = useState('');
 
 
 <div className='' style={{display:dinner? "block":"none"}}>  
-<Carousel>
+<Carousel fade>
 <Carousel.Item interval={15000}>
 
 <Box sx={{ width: '100%' }}>

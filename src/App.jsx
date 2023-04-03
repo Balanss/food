@@ -14,6 +14,8 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Bio from './components/Bio';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
 
 
 
@@ -93,7 +95,8 @@ const handleClose = () => {
 
     
    <Footer />
-      <div className='together-switch' > <span className='modeline'>  
+      <div className='together-switch' > <span className='modeline'> 
+      {theme === 'light'? <WbSunnyIcon className='sun'/> :<DarkModeIcon className='night' /> }   
     <Switch onChange={switchTheme} checked={theme === 'light'} /> </span>
     <div className='span-lng'>
       <Button 
