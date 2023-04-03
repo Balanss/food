@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
- 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
 
@@ -40,9 +40,14 @@ h2{
     margin-bottom: 0 !important;
 }
 
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700 !important;
+}
+
 p{
-  
-    font-family: 'Yeon Sung', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: clamp(1.25rem, 1.137rem + 0.565vw, 2.5rem);
 }
 
@@ -210,6 +215,7 @@ position: relative;
 
 .center-this-time{
     font-size: 17px;
+    font-family: 'Yeon Sung', cursive;
 }
 
 .top-text-header{
