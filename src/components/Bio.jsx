@@ -6,7 +6,7 @@ export default function Bio() {
     <div className='main-bio-div'>
  
  <div>
-<h2> <Trans i18nKey= "about">  </Trans>  </h2>
+<h2  className='about-text'> <Trans i18nKey= "about">  </Trans>  </h2>
  </div>
 
  <div className='hobby'>

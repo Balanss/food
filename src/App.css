@@ -42,7 +42,7 @@ h2{
 
 p{
   
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Yeon Sung', cursive;
     font-size: clamp(1.25rem, 1.137rem + 0.565vw, 2.5rem);
 }
 
@@ -95,8 +95,14 @@ html{
     background-image: url("./IMG/soft-wallpaper.png")
 }
 
+#light .about-text{
+    color: black;
+    text-shadow: 1px 1px darkgoldenrod;
+}
 
-
+.about-text{
+    text-shadow: 1px 1px darkgoldenrod;
+}
 
 .App{
     background-color: #927055;;
@@ -433,6 +439,7 @@ background-image: url("./IMG/wood.png");
 .mini-menu {
     position: relative;
     text-align: center;
+    height: 1500px;
 }
 
 .formodal{
@@ -734,7 +741,7 @@ height: 360px;
 
 
     .h2-header{
-        margin-top: -18px;
+        margin-top: -40px;
     }
 
     .menu {
@@ -813,6 +820,11 @@ width: 900px;
 @media screen and (min-width:2560px) {
     .car-img {
         width: 150px;
+    }
+
+    
+    .h2-header{
+        margin-top: -45px;
     }
 
 }
