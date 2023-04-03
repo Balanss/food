@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap'); 
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
  
 
@@ -38,6 +37,7 @@ h2{
     font-size: calc(1.325rem + 0.9vw) !important;
     text-shadow: 1px 1px darkgoldenrod;
     font-family: 'Yeon Sung', cursive;
+    margin-bottom: 0 !important;
 }
 
 p{
@@ -48,14 +48,29 @@ p{
 
 h5{
     font-family: 'Roboto', sans-serif;
-    font-size: 14px !important;
+    font-size: 17px !important;
 }
 
-h6{
-    font-family: 'Yeon Sung', cursive;
+h6{ 
+    
     text-shadow: 1px 1px darkgoldenrod;
     font-weight: 600 !important;
-   
+    font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, 1.25rem) !important;
+    margin-bottom: 0 !important;
+
+}
+
+h3{
+    font-size: clamp(1.475rem, 0.7281rem + 0.7345vw, 2.5rem) !important;
+}
+
+hr{
+    width: 65vw;
+}
+
+.hr-bio{
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .carousel-indicators{
@@ -110,6 +125,7 @@ position: relative;
     right: 0px;
     bottom: 0px;
     left: 0px;
+  
 }
 
 .logo{
@@ -164,7 +180,7 @@ position: relative;
 #light .middle-content{
     position: relative;
     height: 50px;
-    top: 50px;
+    top: 6px;
     color: black;
     margin: auto;
   
@@ -183,6 +199,10 @@ position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 17px;
+}
+
+.center-this-time{
     font-size: 17px;
 }
 
@@ -234,8 +254,18 @@ position: relative;
 
 
 .middle-info{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.company-text{
     padding-top: 20px;
 }
+
 
 
 .car-img{
@@ -324,12 +354,28 @@ background-image: url("./IMG/wood.png");
     right: 0px;
     bottom: 0px;
     left: 0px;
+ 
 
 }
 
 .mini-menu{
     position: relative;
     text-align: left;
+    border-bottom-color: darkgoldenrod;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    background-image: url(/food/src/IMG/soft-wallpaper.png);
+   
+}
+
+.main-bio-div{
+    text-align: center;
+    padding-top: 20px;
+    border-bottom-color: darkgoldenrod;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    color: white;
+    background-image: url(/food/src/IMG/soft-wallpaper.png);
 }
 
 .footer{
@@ -343,6 +389,8 @@ background-image: url("./IMG/wood.png");
 .footer-info{
     padding-left: 10px;
 }
+
+
 
 
 .menu{
@@ -376,6 +424,7 @@ background-image: url("./IMG/wood.png");
     border-style: ridge;
     border-radius: 10px;
     border-color: transparent;
+    cursor: pointer;
 }
 
 
@@ -395,6 +444,7 @@ background-image: url("./IMG/wood.png");
     width: auto!important;
     background-color: transparent !important;
     border: transparent !important;
+ border-radius: 20px;
 }
 
 .menubglist{
@@ -433,6 +483,26 @@ right:5px
     margin-top: 50px !important;
 }
 
+.hobby{
+    width: 90vw;
+    margin: auto;
+}
+
+.p-hobby{
+    font-size: clamp(0.9375rem, 0.9093rem + 0.1412vw, 1.25rem);
+    line-height: 2;
+    text-shadow: 1px 1px darkgoldenrod;
+}
+
+.closing-text{
+    width: 90vw;
+    margin: auto;
+}
+
+a{
+    color: white !important;
+    text-decoration: none !important;
+}
 
 @media screen and (min-width: 375px){
     .menubglist{
@@ -454,7 +524,7 @@ right:5px
     }
 
     .top-text-header{
-        width:57%;
+        width:80%;
         margin-left: 10px;
     }
 
@@ -480,6 +550,15 @@ right:5px
 @media screen and (min-width:768px){
 
 
+      .p-hobby{
+        width: 600px;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+   hr{
+    display: none;
+   }
+
     .formodal{
         width: 500px !important;
         margin: auto;
@@ -488,7 +567,7 @@ right:5px
 .menubglist{margin-left: 20px;
 width: 220px;
 font-size: 50px;
-height: 330px;
+height: 360px;
 }
 
     .style-flex{
@@ -504,8 +583,8 @@ height: 330px;
 }
 
 .h2-header{
-    padding-top: 15px;
-    margin-left: 150px;
+    padding-top: 45px;
+   
     margin-top: -40px;
 }
 
@@ -515,7 +594,7 @@ height: 330px;
 }
 
     .middle-text{
-        width: 50vw;
+        width: 750px;
         display: inline-block;
         margin-bottom: 0;
         margin-top: 0;
@@ -523,10 +602,28 @@ height: 330px;
     }
 
     .middle-info {
-        padding-top: 90px;
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
     } 
+
+    .svg-icon{
+        margin-right: 5px !important;
+    }
+
+    .company-text{
+        padding-top: 40px;
+    }
+
+    .display-this-flex{
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .middle-pics {
-        height: 325px;
+        height: 550px;
         position: relative;
         text-align: center;
         width: auto;
@@ -560,6 +657,8 @@ height: 330px;
             right: 0px;
             bottom: 0px;
             left: 0px;
+            background-attachment: fixed;
+            
         }
 
 
@@ -572,17 +671,18 @@ height: 330px;
         .spicesbg::before{
             content:"";
             background-image: url("./IMG/pot.jpg");
-          
+          background-attachment: fixed;
             width: auto;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             opacity: 0.6;
             position: absolute;
-            top: -10px;
+            top: 0px;
             right: 0px;
             bottom: 0px;
             left: 0px;
+            
         
         }
 
@@ -603,6 +703,9 @@ height: 330px;
 @media screen and (min-width:1024px){
 
 
+    .h2-header{
+        margin-top: -18px;
+    }
 
     .menu {
         display: flex;
@@ -617,7 +720,7 @@ height: 330px;
     }
 
     .top-text-header {
-        width: 45vw;
+        width: 70vw;
         margin-left: 100px;
     }
 
@@ -650,6 +753,15 @@ width: 900px;
 
 
 @media screen and (min-width:1440px){
+
+
+    .middle-text{
+        width: 950px;
+    }
+    .top-text-header {
+        width: 50vw;
+        margin-left: 100px;
+    }
 
     .foodmenu {font-size: 30px;}
     .car-img {

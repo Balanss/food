@@ -16,6 +16,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import Carousel from 'react-bootstrap/Carousel';
 
 const style = {
   position: "absolute",
@@ -34,8 +35,11 @@ export default function Cakes() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
 
-  return (
+  
+
+  return (<>
     <div>
+
       <Box sx={{ width: "100%" }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={6}>
@@ -48,9 +52,9 @@ export default function Cakes() {
                     alt={cake1}
                     className="menulist"
                     placeholderSrc={cake1ph}
-                    effect="blur"
+                    
                   />
-                  Chocolate cake
+                  <Trans i18nKey= "chocolate">  </Trans>
                 </h6>
               </div>
             </Button>
@@ -63,9 +67,11 @@ export default function Cakes() {
                     alt={cake2}
                     className="menulist"
                     placeholderSrc={cake2ph}
-                    effect="blur"
+                    
                   />
                   Bojo
+                  <br />
+                  <Trans i18nKey= "bojo">  </Trans>
                 </h6>
               </div>
             </Button>
@@ -77,16 +83,62 @@ export default function Cakes() {
                     alt={cake3}
                     className="menulist"
                     placeholderSrc={cake3ph}
-                    effect="blur"
+                    
                   />
-                  Marmer cake
+                 <Trans i18nKey= "marmer">  </Trans>
+                  <br />
+                  
                 </h6>
               </div>
             </Button>
 
+            
+
           </Grid>
 
-          <Modal
+       
+
+          <Grid item xs={6}>
+            <Button onClick={() => {setOpen(true);setId(viado);}}>
+              <div className="menubglist">
+                <h6>
+                   <LazyLoadImage
+                    loading="lazy"
+                    src={viado}
+                    alt={viado}
+                    className="menulist"
+                    
+                  />
+                  Fiado 
+                  <br/>
+                  <Trans i18nKey= "cinnamon cake">  </Trans>
+                </h6>
+              </div>
+            </Button>
+            <Button onClick={() => {setOpen(true);setId(cake4);}} > <div className="menubglist"> <h6>
+                  <LazyLoadImage
+                    loading="lazy"
+                    src={cake4}
+                    alt={cake4}
+                    className="menulist"
+                    placeholderSrc={cake4ph}
+                    
+                  />
+                <Trans i18nKey= "currants">  </Trans>
+                </h6>
+              </div>
+            </Button>
+
+        
+
+          </Grid>
+        </Grid>
+      </Box>
+
+    
+
+    </div>
+    <Modal
             open={open}
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
@@ -103,39 +155,5 @@ export default function Cakes() {
               </Typography>
             </Box>
           </Modal>
-
-          <Grid item xs={6}>
-            <Button onClick={() => {setOpen(true);setId(viado);}}>
-              <div className="menubglist">
-                <h6>
-                   <LazyLoadImage
-                    loading="lazy"
-                    src={viado}
-                    alt={viado}
-                    className="menulist"
-                    effect="blur"
-                  />
-                  Viado
-                </h6>
-              </div>
-            </Button>
-            <Button onClick={() => {setOpen(true);setId(cake4);}} > <div className="menubglist"> <h6>
-                  <LazyLoadImage
-                    loading="lazy"
-                    src={cake4}
-                    alt={cake4}
-                    className="menulist"
-                    placeholderSrc={cake4ph}
-                    effect="blur"
-                  />
-                Nuts with currants
-                </h6>
-              </div>
-            </Button>
-
-          </Grid>
-        </Grid>
-      </Box>
-    </div>
-  );
+ </> );
 }

@@ -4,7 +4,7 @@ import useLocalStorage from 'use-local-storage';
 import './App.css'
 import Middle from './components/Middle';
 import logo from './IMG/logo.jpg'
-import Ending from './components/Ending';
+import Dinner from './components/Dinner';
 import Footer from './components/Footer';
 import { Trans , useTranslation } from 'react-i18next';
 import fr from "./IMG/fr.png";
@@ -13,6 +13,8 @@ import Switch from '@mui/material/Switch';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Bio from './components/Bio';
+
 
 
 
@@ -64,8 +66,8 @@ const handleClose = () => {
   return (<>
     <ThemeContext.Provider value = {{theme,switchTheme}}>
       <div className='no-display'> <h2 >Sorry display size is not supported </h2></div>
-<div className="App" id={theme}>
-<div className='logo'> 
+<div className="App" id={theme} >
+<div className='logo'  id='info'> 
 
 <div className='bg-div' loading='lazy'>
 <img className='top-logo' src={logo} ></img>
@@ -82,7 +84,8 @@ const handleClose = () => {
     
     
     <Middle />
-   <Ending />
+   <Dinner />
+   <Bio/>
    
 
    
