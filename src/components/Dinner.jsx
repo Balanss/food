@@ -119,6 +119,7 @@ const [ id , setId] = useState('');
      
       </Carousel.Item>
 
+  
 
       <Carousel.Item interval={15000}>
 
@@ -154,8 +155,6 @@ const [ id , setId] = useState('');
 
 </div>
 
-
-</div>
 <Modal
         open={open}
         onClose={handleClose}
@@ -168,6 +167,9 @@ const [ id , setId] = useState('');
           </Typography>
         </Box>
       </Modal>
+
+</div>
+
 </div>
 
 

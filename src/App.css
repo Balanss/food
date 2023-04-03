@@ -31,10 +31,15 @@ html{height: 100vh;}
 
 .carousel-indicators{
     top: 0 !important;
+    height: 10px;
+}
+.css-10mzr36-MuiGrid-root>.MuiGrid-item{
+    position: relative;
+    top: 45px;
 }
 
 h2{
-    font-size: calc(1.325rem + 0.9vw) !important;
+   
     text-shadow: 1px 1px darkgoldenrod;
     font-family: 'Yeon Sung', cursive;
     margin-bottom: 0 !important;
@@ -771,9 +776,13 @@ height: 360px;
     .middle-content {
         position: relative;
         height: 50px;
-        top: -6px;
+        top: 0px;
         color: white;
         margin: auto;
+    }
+
+    #light .middle-content{
+        top: 0px;
     }
     
     
