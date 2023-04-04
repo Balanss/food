@@ -25,6 +25,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import salad6 from "./lunch/salad6.webp"
 
 
 
@@ -62,7 +63,7 @@ const handleClose = () => setOpen(false);
             <Grid item xs={6}>
             <Button  className='index'  onClick={() => {setOpen(true); setId(sate)} }> <div className='menubglist'>  <h6 >  <LazyLoadImage className='menulist' src={sate} alt={sate}   /> <Trans i18nKey="sate"></Trans> </h6> </div> </Button>
             <Button  className='index' onClick={() => {setOpen(true); setId(coco)} }> <div  className='menubglist'> <h6>  <LazyLoadImage className='menulist' src={coco}  alt={coco}   /> <Trans i18nKey="coco"></Trans></h6> </div> </Button>
-            <Button className='index'  onClick={() => {setOpen(true); setId(lunch3)} }>   <div className='menubglist'>  <h6 > <LazyLoadImage  className='menulist' src={lunch3} alt={lunch3} placeholderSrc={lunch3ph}  /> <Trans i18nKey="pom"></Trans>  </h6> </div> </Button>     
+            <Button className='index'  onClick={() => {setOpen(true); setId(lunch3)} }>   <div className='menubglist'>  <h6 > <LazyLoadImage  className='menulist' src={lunch3} alt={lunch3} placeholderSrc={lunch3ph}  /> pom  <br/> <Trans i18nKey="pom"></Trans>  </h6> </div> </Button>     
             </Grid>
           </Grid>   
         </Box>       
@@ -85,6 +86,7 @@ const handleClose = () => setOpen(false);
             </Grid>
             <Grid item xs={6}>
              <Button  className='index' onClick={() => {setOpen(true); setId(salad3)} }>  <div  className='menubglist'> <h6>  <LazyLoadImage className='menulist' src={salad3}  alt={salad3} placeholderSrc={salad3ph}  /> <Trans i18nKey="olives"></Trans> </h6> </div> </Button> 
+             <Button className='index' onClick={() => { setOpen(true); setId(salad6) }}> <div className='menubglist'><h6> <LazyLoadImage  className='menulist' src={salad6} alt={salad6} />  <Trans i18nKey="las"> </Trans> </h6> </div> </Button>
              <Button  className='index' onClick={() => {setOpen(true); setId(salad2)} }><div className='menubglist'> <h6 >  <LazyLoadImage className='menulist' src={salad2} alt={salad2} placeholderSrc={salad2ph}  /> <Trans i18nKey="eggsalad"></Trans> </h6> </div> </Button>
 
             </Grid>

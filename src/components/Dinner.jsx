@@ -28,6 +28,8 @@ import Lunch from "./Lunch"
 import cannelloni from "./dinner/cannelloni.webp"
 import bami from "./dinner/bami.webp"
 import nasi from "./dinner/nasi.webp"
+import din6 from "./dinner/din6.webp"
+import din7 from "./dinner/din7.webp"
 
 const style = {
   position: 'absolute',
@@ -130,9 +132,11 @@ const [ id , setId] = useState('');
       
       <Button className='index' onClick={() => { setOpen(true); setId(macaroni) }}> <div className='menubglist'><h6><LazyLoadImage  className='menulist' src={macaroni} alt={macaroni}  placeholderSrc={macaroniph} /> <Trans i18nKey="macaroni"> </Trans> </h6> </div> </Button>
       <Button className='index' onClick={() => { setOpen(true); setId(din4) }}> <div className='menubglist'><h6> <LazyLoadImage  className='menulist' src={din4} alt={din4} placeholderSrc={din4ph}  />  <Trans i18nKey="steamed"> </Trans> </h6> </div> </Button>
+      <Button className='index' onClick={() => { setOpen(true); setId(din6) }}> <div className='menubglist'><h6> <LazyLoadImage  className='menulist' src={din6} alt={din6}  />  <Trans i18nKey="bak"> </Trans> </h6> </div> </Button>
 
       </Grid>
       <Grid item  xs={6} sm={6}>
+      <Button className='index' onClick={() => { setOpen(true); setId(din7) }}> <div className='menubglist'><h6> <LazyLoadImage  className='menulist' src={din7} alt={din7}   />  <Trans i18nKey="tjauw"> </Trans> </h6> </div> </Button>
       <Button className='index' onClick={() => { setOpen(true); setId(din5) }}> <div className='menubglist'><h6> <LazyLoadImage  className='menulist' src={din5} alt={din5} placeholderSrc={din5ph}  /> <Trans i18nKey="chow"> </Trans> </h6> </div> </Button>
       
      </Grid>

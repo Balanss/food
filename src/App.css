@@ -259,11 +259,10 @@ position: relative;
 
     text-align: center;
     margin-bottom: -16px;
+    color: white;
 }
 
- .middle-text{
-    color: white;
-} 
+
 
 #light .middle-text{
     color: black;
@@ -280,7 +279,15 @@ position: relative;
 
 
 .company-text{
-    padding-top: 20px;
+    padding-top: 0px;
+    position: relative;
+    top: 20px;
+    background-color: #00a85a;
+    background-image: url(/food/src/IMG/soft-wallpaper.png);
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 30px !important;
 }
 
 
@@ -647,7 +654,7 @@ height: 360px;
         display: inline-block;
         margin-bottom: 0;
         margin-top: 0;
-        height: 326px;
+       
     }
 
     .middle-info {
@@ -661,7 +668,16 @@ height: 360px;
     }
 
     .company-text{
-        padding-top: 40px;
+        padding-top: 0px;
+        position: relative;
+        top: 20px;
+        background-color: #00a85a;
+        background-image: url(/food/src/IMG/soft-wallpaper.png);
+        width: 400px;
+        margin: auto;
+        border-radius: 5px;
+        margin-bottom: 30px !important;
+        font-size: clamp(2.25rem, 1.9643rem + 0.5952vw, 2.5rem);
     }
 
     .display-this-flex{
@@ -672,7 +688,6 @@ height: 360px;
     }
 
     .middle-pics {
-        height: 550px;
         position: relative;
         text-align: center;
         width: auto;
@@ -752,6 +767,10 @@ height: 360px;
 @media screen and (min-width:1024px){
 
 
+    .company-text{
+        width: 700px;
+    }
+
     .h2-header{
         margin-top: -40px;
     }
@@ -769,8 +788,10 @@ height: 360px;
     }
 
     .top-text-header {
-        width: 70vw;
-        margin-left: 100px;
+        width: 600px;
+    margin: auto;
+    position: relative;
+    left: -165px;
     }
 
     .middle-content {
@@ -812,8 +833,10 @@ width: 900px;
         width: 950px;
     }
     .top-text-header {
-        width: 50vw;
-        margin-left: 100px;
+        width: 600px;
+        margin: auto;
+        position: relative;
+        left: -165px;
     }
 
     .foodmenu {font-size: 30px;}

@@ -4,6 +4,7 @@ import { Trans , useTranslation } from 'react-i18next'
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import EmailIcon from '@mui/icons-material/Email';
 import "bootstrap/dist/css/bootstrap.css";
+import banner from "../IMG/bannerbg.jpg"
 
 
 export default function Middle() {
@@ -15,7 +16,7 @@ export default function Middle() {
 <div className='middle-pics'> 
 
 <div className='middle-text' >  
-<h2 className='company-text'> <Trans i18nKey= "company">  </Trans> </h2>
+<h2 className='company-text'>   <Trans i18nKey= "company">  </Trans> </h2>
 <div className='middle-info'>
 <div className='display-this-flex'>
   <h2 style={{fontSize:'30px'}}> Contact</h2>

@@ -10,7 +10,7 @@
   "guyana": "Guyane Française",
   "location": "l' emplacement",
   "email-address": " mavisbett10@gmail.com",
-  "kkf": "Numéro de siret : 8879231750020",
+  "kkf": "Numéro de siret : 88792317500020",
   "chocolate": "Gâteau au chocolat",
   "cinnamon cake": "Gâteau aux raisins et à la cannelle",
   "bojo": "Gâteau de manioc à la noix de coco",
@@ -28,7 +28,7 @@
   "pom": "Casserole surinamaise au poulet et racine d'oreille d'éléphant",
   "pine": "Salade de pignons de pin et fromage",
   "olives": "Olives concombre paille fromage tomates salade",
-  "corn": "Salade de noix d'ananas au maïs",
+  "corn": "Salade de pignons de maïs",
   "eggsalad": "Fromage blanc frites saucisse fumée salade aux œufs",
   "mixsalad": "Salade macédoine,  merquez chipolatas au sauce tomate aux basilic et macaroni",
   "chinesenasi": "Riz sauté au maïs, poulet et légumes",
@@ -48,5 +48,8 @@
   "click": "Cliquez",
   "here": "ICI",
   "opening": "Horaire d'ouverture",
-  "about": "À propos de nous"
+  "about": "À propos de nous",
+  "bak": "Poisson salé séché et poisson frit avec un mélange de riz et de gombo",
+  "las": "Lassanga avec salade feta",
+  "tjauw": "Chow mein chinois au poulet et au porc"
 }
