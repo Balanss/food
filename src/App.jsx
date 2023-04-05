@@ -72,7 +72,7 @@ const handleClose = () => {
 <div className='logo'  id='info'> 
 
 <div className='bg-div' loading='lazy'>
-<img className='top-logo' src={logo} ></img>
+<img className='top-logo' src={logo}  alt={logo}></img>
 <div className='middle-content'>
  
      <div className='top-text-header'> <h2 className='h2-header'> <Trans i18nKey= "header"/>

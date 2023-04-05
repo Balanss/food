@@ -283,7 +283,7 @@ position: relative;
     position: relative;
     top: 20px;
     background-color: #00a85a;
-    background-image: url(/food/src/IMG/soft-wallpaper.png);
+    background-image: url(/src/IMG/soft-wallpaper.png);
     width: 300px;
     margin: auto;
     border-radius: 5px;
@@ -389,7 +389,7 @@ background-image: url("./IMG/wood.png");
     border-bottom-color: darkgoldenrod;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    background-image: url(/food/src/IMG/soft-wallpaper.png);
+    background-image: url(/src/IMG/soft-wallpaper.png);
    
 }
 
@@ -400,7 +400,7 @@ background-image: url("./IMG/wood.png");
     border-bottom-width: 2px;
     border-bottom-style: solid;
     color: white;
-    background-image: url(/food/src/IMG/soft-wallpaper.png);
+    background-image: url(/src/IMG/soft-wallpaper.png)
 }
 
 .footer{
@@ -672,7 +672,7 @@ height: 380px;
         position: relative;
         top: 20px;
         background-color: #00a85a;
-        background-image: url(/food/src/IMG/soft-wallpaper.png);
+        background-image: url(/src/IMG/soft-wallpaper.png);
         width: 400px;
         margin: auto;
         border-radius: 5px;
